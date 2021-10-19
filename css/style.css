@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /******************** 
@@ -15,6 +19,8 @@ nav {
     height: 100px;
     display: flex;
     border-bottom: 2px solid black;
+    color: white;
+    background-color: #001533;
 }
 
 .nav_sx {
@@ -26,9 +32,9 @@ nav {
 }
 
 .nav_sx img {
-    height: 70px;
-    width: 70px;
-    margin-right: 20px;
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
 }
 
 .nav_dx {
@@ -55,7 +61,7 @@ nav form button {
 SEZIONE QUADRATO GIOCO
 *******************/
 .container {
-    background-color: cyan;
+    background-color: #7fffd4;
     padding: 75px 0;
 }
 
@@ -69,6 +75,7 @@ SEZIONE QUADRATO GIOCO
 
 .square_container.border_active {
     border: 1px solid black;
+    box-shadow: 0 0 90px rgba(4, 0, 255, 0.6);
 }
 
 .square_container .box {
@@ -76,8 +83,10 @@ SEZIONE QUADRATO GIOCO
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .square_container .box.active {
-    background-color: rgb(9, 98, 199);
+    background-color: #6495ed;
+    color: white;
 }

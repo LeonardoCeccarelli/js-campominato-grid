@@ -94,7 +94,17 @@ function generateCellGrid(cellsNumber) {
         cell.style.height = sizeCell + "%"
         cell.textContent = i + 1
 
+        cell.addEventListener("click", clickChangeColor)
+
         // aggiungo il tutto
         cellContainer.append(cell)
     }
+}
+
+/**
+ * Funzione che cambia il colore della singola cella al click
+ */
+
+function clickChangeColor() {
+    this.classList.toggle("active")
 }
